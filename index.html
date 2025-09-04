@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Jeevan Santosh | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Hi!</h1>
+    <h1>This is</h1>
+    <h1><span class="highlight"> Kakaraparthi Jeevan Santhosh</span></h1>
+    <p></p>
+    <div class="buttons">
+       <a href="#about">About Me</a>
+    <a href="#skills">Technical Skills</a>
+  <a href="#projects">View My Work</a>
+  <a href="resume.html" target="_blank">View Resume</a>
+    <a href="#contact">Contact Me</a>
+</div>
+
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <img src="Jeevan.jpg" alt="Jeevan Santosh Profile Picture">
+    <p>
+      I'm Jeevan Santosh, a passionate Full Stack Developer skilled in both frontend and backend development. With a strong foundation in Python, C, Java, MySQL, and web technologies like HTML, CSS, and JavaScript, I bring ideas to life through clean, functional, and scalable code.
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><h3>Programming Languages</h3>C<br>Python<br>Java DSA</li>
+      <li><h3>Databases</h3>MySQL</li>
+      <li><h3>Web Technologies</h3>HTML<br>CSS</li>
+      <li><h3>Scripting Languages</h3>JavaScript</li>
+      <li><h3>Tools</h3>VS Code<br>Eclipse<br>Canva</li>
+    </ul>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project">
+      <h3>Hospital Management System</h3>
+      <p>A desktop-based application built using Java and MySQL in Eclipse for managing patient records, appointments, and staff.</p>
+      <p><strong>Technologies:</strong> Java, MySQL, Eclipse</p>
+    </div>
+    <div class="project">
+      <h3>Foot Step – E-commerce Website</h3>
+      <p>A fully responsive e-commerce website for footwear shopping, developed using HTML, CSS, and JavaScript.</p>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+    </div>
+    <div class="project">
+      <h3>Portfolio</h3>
+      <p>A modern, responsive portfolio website built with web technoligies,featuring a dark theme,smooth animations,and interactive components.</p>
+      <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+    </div>
+  </section>
+ 
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:kjeevansanthosh234@gmail.com">kjeevansanthosh234@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/jeevansanthoshh" target="_blank">jeevan santhoshh</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeevan-santhosh-kakaraparthi-b1421a322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Jeevan santhosh Kakaraparthi</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Jeevan Santosh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const title = document.querySelector('.hero h1');
+    const text = title.innerText;
+    let index = 0;
+    title.innerText = '';
+
+    function typeEffect() {
+      if (index < text.length) {
+        title.innerText += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
+      }
+    }
+    window.onload = typeEffect;
+  </script>
+</body>
+</html>
